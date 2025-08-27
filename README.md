@@ -36,7 +36,7 @@ Foundry for testing (forge-std)
 
 # Functions
 
-1. listNFT(address nft, uint256 tokenId, uint256 price) - List an NFT for sale.
+##1. listNFT(address nft, uint256 tokenId, uint256 price) - List an NFT for sale.
    
    Requirements: Caller must be the owner. Price > 0.
 
