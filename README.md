@@ -39,11 +39,15 @@ Foundry for testing (forge-std)
 **1. listNFT(address nft, uint256 tokenId, uint256 price) - List an NFT for sale.**
    
    *Requirements*:
+   
     Caller must be the owner. Price > 0.
 
 **2. buyNFT(address nft, uint256 tokenId) - Buy a listed NFT.**
    
-   *Requirements*: Listing must exist. Buyer must pay the exact price.
+   *Requirements*: 
+    Listing must exist. 
+    
+    Buyer must pay the exact price.
 
     Seller must still be the owner of the NFT.
 
