@@ -45,6 +45,7 @@ Foundry for testing (forge-std)
 **2. buyNFT(address nft, uint256 tokenId) - Buy a listed NFT.**
    
    *Requirements*: 
+   
     Listing must exist. 
     
     Buyer must pay the exact price.
