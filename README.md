@@ -34,41 +34,25 @@ Foundry for testing (forge-std)
 
 # ⚙️ Smart Contract: NFTMarketplace
 
-Functions
+# Functions
 
-listNFT(address nft, uint256 tokenId, uint256 price)
+1. listNFT(address nft, uint256 tokenId, uint256 price) - List an NFT for sale.
+   
+   Requirements: Caller must be the owner. Price > 0.
 
-List an NFT for sale.
+2. buyNFT(address nft, uint256 tokenId) - Buy a listed NFT.
+   
+   Requirements: Listing must exist. Buyer must pay the exact price.
 
-Requirements:
+    Seller must still be the owner of the NFT.
 
-Caller must be the owner.
+    Funds are transferred to the seller.
 
-Price > 0.
+3. cancelList(address nft, uint256 tokenId) - Cancel an active listing.
 
-Marketplace must be approved to transfer the NFT.
+   Requirements:
 
-buyNFT(address nft, uint256 tokenId)
-
-Buy a listed NFT.
-
-Requirements:
-
-Listing must exist.
-
-Buyer must pay the exact price.
-
-Seller must still be the owner of the NFT.
-
-Funds are transferred to the seller.
-
-cancelList(address nft, uint256 tokenId)
-
-Cancel an active listing.
-
-Requirements:
-
-Caller must be the seller.
+    Caller must be the seller.
 
 # 🧪 Testing
 
