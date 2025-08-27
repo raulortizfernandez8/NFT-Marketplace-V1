@@ -36,21 +36,21 @@ Foundry for testing (forge-std)
 
 # Functions
 
-##1. listNFT(address nft, uint256 tokenId, uint256 price) - List an NFT for sale.
+**1. listNFT(address nft, uint256 tokenId, uint256 price) - List an NFT for sale.**
    
-   Requirements: Caller must be the owner. Price > 0.
+   *Requirements*: Caller must be the owner. Price > 0.
 
-2. buyNFT(address nft, uint256 tokenId) - Buy a listed NFT.
+**2. buyNFT(address nft, uint256 tokenId) - Buy a listed NFT.**
    
-   Requirements: Listing must exist. Buyer must pay the exact price.
+   *Requirements*: Listing must exist. Buyer must pay the exact price.
 
     Seller must still be the owner of the NFT.
 
     Funds are transferred to the seller.
 
-3. cancelList(address nft, uint256 tokenId) - Cancel an active listing.
+**3. cancelList(address nft, uint256 tokenId) - Cancel an active listing.**
 
-   Requirements:
+   .*Requirements*:
 
     Caller must be the seller.
 
