@@ -38,7 +38,8 @@ Foundry for testing (forge-std)
 
 **1. listNFT(address nft, uint256 tokenId, uint256 price) - List an NFT for sale.**
    
-   *Requirements*: Caller must be the owner. Price > 0.
+   *Requirements*:
+    Caller must be the owner. Price > 0.
 
 **2. buyNFT(address nft, uint256 tokenId) - Buy a listed NFT.**
    
@@ -50,7 +51,7 @@ Foundry for testing (forge-std)
 
 **3. cancelList(address nft, uint256 tokenId) - Cancel an active listing.**
 
-   .*Requirements*:
+   *Requirements*:
 
     Caller must be the seller.
 
